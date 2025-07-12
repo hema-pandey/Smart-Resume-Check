@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Smart Resume Check</h1>
+            <ul class="nav-links">
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+      
+<section class="resume-analyzer">
+    <div class="analyzer-container">
+        <div class="text-content">
+            <h2>AI-Powered Resume Analyzer</h2>
+            <p>Upload your resume and get instant feedback on formatting, keywords, and overall impact score.</p>
+            <input type="file" id="resumeUpload" accept=".pdf, .doc, .docx">
+            <button class="analyze-btn" onclick="analyzeResume()">Analyze Resume</button>
+        </div>
+        <div class="image">
+            <img src="Copilot_20250605_141901.png" alt="resume analysis">
+        </div>
+    </div>
+
+    <div id="loading" class="loading-animation" style="display: none;">
+        <p>Analyzing your resume... ⏳</p>
+    </div>
+
+    <div id="analysisResults" class="results" style="display: none;">
+        <h3>📊 Analysis Results</h3>
+        <p id="resumeFeedback"></p>
+
+        <div class="resume-insights">
+            <div class="insight">
+                <h4>✅ Formatting Quality</h4>
+                <p id="formatQuality"></p>
+            </div>
+            <div class="insight">
+                <h4>📈 Keyword Optimization</h4>
+                <p id="keywordOptimization"></p>
+            </div>
+            <div class="insight">
+                <h4>⚡ Overall Impact Score</h4>
+                <p id="impactScore"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about section----------------------------------------------------------------------------------- -->
+<section id="about-section">
+    <div class="about-container">
+        <h2>About Smart Resume Check</h2>
+        <p>Smart Resume Check is an AI-powered resume optimization tool that helps job seekers refine their resumes for maximum impact.</p>
+
+        <!-- Project Details -->
+        <div class="project-details">
+            <h3>📌 Project Highlights</h3>
+            <ul>
+                <li>🚀 AI-driven resume analysis</li>
+                <li>✅ Keyword optimization for job matching</li>
+                <li>📑 Professional resume templates</li>
+                <li>💡 Smart suggestions for improvement</li>
+            </ul>
+        </div>
+
+        <!-- Testimonials -->
+          <div class="testimonials">
+            <h3>What Users Say</h3>
+            <br>
+             
+        <div class="review">
+            <img src="res59.jpg" alt="Reviewer 1">
+            <div class="review-text">
+                <h3>Aaradhya</h3>
+                <p>"Thanks to Smart Resume Check, I landed my dream job in just two weeks!"</p>
+                <span class="rating">★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="man1.webp" alt="Reviewer 2">
+            <div class="review-text">
+                <h3>kishor Sharma</h3>
+                <p>"The AI suggestions were spot-on and helped me make my resume professional."</p>
+                <span class="rating">★★★★☆</span>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="resumw1.webp" alt="Reviewer 3">
+            <div class="review-text">
+                <h3>Zara Shukla</h3>
+                <p>"Best resume optimizer! Helped me create a job-winning CV easily."</p>
+                <span class="rating">★★★★☆</span>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+<!-- Services section---------------------------------------------------------------------------------- -->
+
+<section id="services">
+    <div class="services-container">
+        <h2>🚀 Our Services</h2>
+        <p>Empower your job search with AI-driven resume tools designed for success!</p>
+
+        <div class="service-boxes">
+            <!-- ATS Compatibility Check -->
+            <div class="service-box" id="atsCheck">
+                <img src="Copilot_20250608_185846.png" alt="ATS Compatibility">
+                <h3>ATS Compatibility Check</h3>
+                <p>Ensure your resume passes through automated job screening systems.</p>
+            </div>
+
+            <!-- Resume Templates -->
+            <div class="service-box">
+                <img src="Copilot_20250608_190747.png" alt="Templates">
+                <h3>Resume Templates</h3>
+                <p>Choose optimized templates designed by industry experts.</p>
+            </div>
+
+            <!-- Career Insights -->
+            <div class="service-box">
+                <img src="Copilot_20250608_191626.png" alt="Career Tips">
+                <h3>Career Insights</h3>
+                <p>Personalized tips to improve job search strategy and resume strength.</p>
+            </div>
+
+            <!-- Create Resume Feature -->
+            <div class="service-box">
+                <img src="Copilot_20250608_191957.png" alt="Create Resume">
+                <h3>✍️ Create Resume</h3>
+                <p>Build a stunning resume with AI-powered formatting and custom styles.</p>
+                <button class="resume-btn">Start Creating</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Contact section---------------------------------------------------------------------------------- -->
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us and we'll be happy to assist you!</p>
+
+        <div class="contact-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+          <textarea id="message" placeholder="Your Message"></textarea>
+         <span id="charCount">Characters: 0</span>
+
+            <button class="send-btn">Send Message</button>
+        </div>
+
+        <div class="contact-details">
+            <div class="contact-item">
+                <h3>📍 Address</h3>
+                <p>New Delhi, India</p>
+            </div>
+            <div class="contact-item">
+                <h3>📞 Phone</h3>
+                <p>+91 9876543210</p>
+            </div>
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>support@smartresumecheck.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Smart Resume Check | All Rights Reserved</p>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
