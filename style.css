@@ -368,14 +368,77 @@ input {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .resume-insights {
-        flex-direction: column;
-        align-items: center;
-    }
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-    .insight {
-        width: 90%;
-    }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .login-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ANALYZER SECTION */
+  .analyzer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .text-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .text-content h2 {
+    font-size: 26px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .text-content input,
+  .analyze-btn {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  /* RESUME INSIGHTS SECTION */
+  .resume-insights {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .insight {
+    width: 95%;
+  }
 }
 
 
@@ -518,7 +581,72 @@ input {
     font-weight: bold;
     color: #FFD700; /* Golden Stars */
 }
+/* responsive style */
+@media (max-width: 768px) {
+  #about-section {
+    padding: 50px 5%;
+  }
 
+  .about-container h2 {
+    font-size: 26px;
+  }
+
+  .about-container p {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .project-details {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .project-details h3 {
+    font-size: 20px;
+  }
+
+  .project-details ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-details ul li {
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 15px;
+  }
+
+  .review {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .review img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .review-text h3 {
+    font-size: 16px;
+  }
+
+  .review-text p {
+    font-size: 14px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+}
 
 /* Services Section-------------------------------------------------------------------------------------- */
 
